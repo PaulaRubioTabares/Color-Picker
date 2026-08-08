@@ -1,0 +1,154 @@
+:root {
+    --color-claro: #fffafa;
+    --color-medio: #e1d5d5;
+    --color-sombra: #9e6a6e;
+    --color-oscuro: #333;
+    --radius: 15px;
+    --box-shadow: 0px 0px 1rem;
+}
+
+body {
+    background-color: var(--color-medio);
+    color: var(--color-oscuro);
+}
+
+/* Títulos del documento */
+.h1Header,
+.h2Title {
+    text-align: center;
+    text-shadow: 0 0 5px var(--color-sombra);
+}
+
+/* Contenedor secciones del documento */
+.container {
+    margin: 1.3rem 2rem;
+    padding: 1.3rem;
+    border-radius: var(--radius);
+    background-color: var(--color-claro);
+
+    transition: all 5seg ease;
+}
+.container:hover {
+    box-shadow: var(--box-shadow) var(--color-sombra);
+}
+
+/* Section  containerColorPicker */
+
+/* Contenedor selector color containerColorPicker*/
+.containerColorPicker {
+    text-align: center;
+}
+.containerColorPicker {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.articleContainer {
+    width: 20rem;
+    border: 3px solid var(--color-sombra);
+}
+
+/* Elementos selector color containerColorPicker*/
+.colorSelector,
+.buttonPresionar,
+.cuadroColor {
+    display: block;
+    width: 15rem;
+    margin: 1rem auto;
+}
+.buttonPresionar,
+.cuadroColor,
+.colorSelector {
+    border-radius: var(--radius);
+}
+
+/* input color */
+.colorSelector {
+    height: 7rem;
+    border: none;
+}
+/* Botón convertir */
+.buttonPresionar {
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: var(--color-claro);
+    border: 0.2rem solid #ead8dd;
+}
+
+.colorSelector:open,
+.buttonPresionar:hover {
+    cursor: pointer;
+    box-shadow: var(--box-shadow) var(--color-oscuro);
+}
+
+/* Cuadro resultado */
+.cuadroColor {
+    padding: 1rem;
+    border: 1px solid var(--color-oscuro);
+    background-color: #c5cafc;
+}
+
+/* texto resultado */
+.textoFormatoContenedor {
+    display: grid;
+    grid-template:
+        "a b c" auto/
+        1fr 2fr 1fr;
+    border-bottom: 1px solid var(--color-oscuro);
+}
+.textoFormato {
+    grid-area: a;
+}
+.textoColor {
+    grid-area: b;
+    margin-left: 1rem;
+}
+.bi-copy {
+    grid-area: c;
+    margin-left: 1rem;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.bi-copy:hover {
+    cursor: pointer;
+}
+.bi-copy:active {
+    font-size: 2rem;
+}
+
+/* Section explicationContainer */
+
+/* contenedor explicación tema */
+.explicationContainer {
+    padding: 5rem;
+}
+
+.articleExplication {
+    padding: 1rem;
+    border-radius: var(--radius);
+    background-color: #f5eded;
+}
+
+/* Ejemplos de color del tema*/
+.ejemploColor {
+    display: inline-block;
+    padding: 0.5rem;
+}
+.ejemploHexadecimal {
+    color: #fff;
+}
+
+/* tabla hexadecimal */
+.tableHexadecimal {
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+}
+td,
+th {
+    border: 1px solid var(--color-medio);
+}
+
+/* 
+600px
+*/
